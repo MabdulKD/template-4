@@ -1,0 +1,74 @@
+#popup {
+    background: linear-gradient(to bottom, transparent, #4F4557), url("img/359506780_18239081959206729_7462022212390940066_n.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.3s ease; color: #F4EEE0;
+    justify-content: center;
+  }
+  #popup .atas p {
+    font-size: smaller;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px #F4EEE0;
+
+  }
+  #popup .atas h1 {
+    font-size: 6vw;
+    text-transform: capitalize;
+    font-weight: 450;
+    color: #F4EEE0;
+    text-shadow: 2px 2px 5px #4F4557;
+  }
+  #popup .bawah {
+    margin-top: 180px;
+  }
+  #popup .bawah p {
+    text-transform: capitalize;
+  }
+  #popup .bawah h2 {
+    font-size: initial;
+    margin: 20px;
+  }
+  #popup .bawah button {
+    padding: 10px 20px 10px 20px;
+    background-color: #4F4557;
+    text-decoration: none;
+    list-style: none;
+    color: #F4EEE0;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border: none;
+    cursor: pointer;
+    border: 1px solid #F4EEE0;
+  }
+  #popup .bawah h2 {
+    text-transform: uppercase;
+    color: #F4EEE0;
+  }
+  #popup .bawah button:hover {
+      background-color: #6D5D6E;
+      text-shadow: 2px 2px 5px #4F4557;
+
+  }
+  .popup-closed {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  @media only screen and (max-width : 450px) {
+    #popup .atas h1 {
+      font-size: 45px;
+    }
+
+  }

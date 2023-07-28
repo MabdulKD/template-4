@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template 4</title>
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- aos js -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+    <!-- splide js -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"> -->
+        
+    <!-- lightgallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css" integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-autoplay.min.css" integrity="sha512-LlHSkMTvyRwh1YjzXwk6bxjdt3huGhCyK1vlCC6f7Db/g+2sYXz2YNasyZHnMUgykqPksmD/44DIINhqpWBjig==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-fullscreen.min.css" integrity="sha512-JlgW3xkdBcsdFiSfFk5Cfj3sTgo3hA63/lPmZ4SXJegICSLcH43BuwDNlC9fqoUy2h3Tma8Eo48xlZ5XMjM+aQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lg-zoom.min.css" integrity="sha512-vIrTyLijDDcUJrQGs1jduUCSVa3+A2DaWpVfNyj4lmXkqURVQJ8LL62nebC388QV3P4yFBSt/ViDX8LRW0U6uw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- me css -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
+
+</head>
+<body>
+
+    <!-- audio website -->
+    <audio id="popup-music" src="Nothings Gonna Change My Love For You  George Benson Wedding Version Lyric Video  Mild Nawin (mp3cut.net).mp3" loop></audio>
+   
+    <!-- popup tamu -->
+    <div id="popup">
+        <div class="atas">
+            <p>undangan pernikahan</p>
+            <h1 class="pengantin">denata & anggelia</h1>
+        </div>
+        <div class="bawah">
+            <p>kepada Yth :</p>
+            <h2>Selamat datang!</h2>
+            <button id="close-popup">Buka Undangan</button>
+        </div>
+    </div>
+    <!-- music controler -->
+    <div id="music-controls" style="display: none;">
+        <button id="play-pause-btn">
+        <i class="fas fa-volume-up fa-lg"></i>
+        <i class="fas fa-volume-mute fa-lg"></i>
+        </button>
+    </div>
+    <div class="hero-section">
+        <h2 data-aos="fade-up" data-aos-duration="2500" data-aos-delay="3000">19 september, 2023 </h2>
+        <h1 data-aos="fade-down" data-aos-duration="2500" data-aos-delay="3000">adhelia & irfan</h1>
+        <img src="img/icon-1.png" alt="icon-1" data-aos="zoom-in">
+        <p>catat dan simpan acara pernikahan kami</p>
+        <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Nama%20Acara&dates=20230720T120000/20230720T130000&details=Deskripsi%20Acara&location=Lokasi%20Acara" class="button">save the date</a>
+        <canvas id="particle-canvas"></canvas>
+    </div>
+    <div class="kata-mutiara-wrapper">
+        <div class="kata-mutiara">
+            <img src="img/icon 2.png" alt="icon 2" data-aos="zoom-in" data-aos-duration="2500">
+            <h3 data-aos="zoom-in" data-aos-duration="2500">"Tidak pernah didapat bunga-bunga cinta antara dua orang yang memadu cinta sebagaimana pada dua orang yang sudah menikah "</h3>
+            <img src="img/icon 2.png" alt="icon 2" data-aos="zoom-in" data-aos-duration="2500">
+        </div>
+    </div>   
+    <div class="mempelai">
+        <div class="profile">
+            <h1>adhelia mufhira</h1>
+            <div class="card">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="border">
+                    <img src="img/wanita.png" alt="">
+                </div>
+            </div>
+            <p>putri pertama dari pasangan</p>
+            <p>bapak adhelia &</p>
+            <p>ibu adhelia mufhira</p>
+            <a href="" class="button"><i class="fa-brands fa-instagram fa-lg" style="color: #fff;"></i> instagram</a>
+        </div>
+        <div class="profile">
+            <h1>irfan padhilah</h1>
+            <div class="card">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="border">
+                    <img src="img/pria.png" alt="">
+                </div>
+            </div>
+            <p>putra pertama dari pasangan</p>
+            <p>bapak irfan &</p>
+            <p>ibu irfan fadhilah</p>
+            <a href="" class="button"><i class="fa-brands fa-instagram fa-lg" style="color: #fff;"></i> instagram</a>
+        </div>
+    </div>
+    <div class="countdown">
+        <div class="waktu">
+            <div class="kotak1">
+                <section class='FlexContainer' data-aos="zoom-in" data-aos-duration="2500">
+                    <div>
+                        <p id="days">00</p>
+                        <p class="ket">day</p>
+                    </div>
+                    <div>
+                        <span> : </span>
+                    </div>
+                    <div>
+                        <p id="hours">00</p>
+                        <p class="ket">hours</p>
+                    </div>
+                    <div>
+                        <span> : </span>
+                    </div>
+                    <div>
+                        <p id="minutes">00</p>
+                        <p class="ket">minutes</p>
+                    </div>
+                    <div>
+                        <span> : </span>
+                    </div>
+                    <div>
+                        <p id="seconds">00</p>
+                        <p class="ket">seconds</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Nama%20Acara&dates=20230720T120000/20230720T130000&details=Deskripsi%20Acara&location=Lokasi%20Acara" class="button">save the date</a>
+    </div>
+    <div class="lokasi">
+        <div class="acara">
+           <div class="outline">
+                 <div class="akad-resepsi" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="judul">
+                    <img src="img/akad-icon.png" alt="icon akad" width="80px">
+                    <h2>akad nikah</h2>
+                </div>
+                <div id="jam">
+                    <i class="fa-solid fa-clock fa-shake fa-xl" style="color: #F4EEE0;"></i>
+                    <p>pukul 09.00 WIB s/d Selesai</p>
+                </div>
+                <div id="tempat">
+                    <i class="fa-solid fa-location-dot fa-xl" style="color: #F4EEE0;"></i>
+                    <p>gedung serbaguna universitas sangga buana ypkp</p>
+                </div>
+                <div id="jalan">
+                    <p>jl.ph.mustafa no 115, bandung</p>
+                </div>
+            </div> 
+           </div> 
+            <div class="outline">
+                <div class="akad-resepsi" data-aos="zoom-in" data-aos-duration="2500">
+                    <div class="judul">
+                        <img src="img/resepsi-icon.png" alt="icon akad" width="80px">
+                        <h2>resepsi</h2>
+                    </div>
+                    <div id="jam">
+                        <i class="fa-solid fa-clock fa-shake fa-xl" style="color: #F4EEE0;"></i>
+                        <p>pukul 09.00 WIB s/d Selesai</p>
+                    </div>
+                    <div id="tempat">
+                        <i class="fa-solid fa-location-dot fa-xl" style="color: #F4EEE0;"></i>
+                        <p>gedung serbaguna universitas sangga buana ypkp</p>
+                    </div>
+                    <div id="jalan">
+                        <p>jl.ph.mustafa no 115, bandung</p>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="maps">
+            <div class="maps-wrapper">
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9225785312847!2d107.63787507429237!3d-6.899862767521995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e7bc68e2e737%3A0x194e40758d7a919!2sUniversitas%20Sangga%20Buana%20YPKP!5e0!3m2!1sen!2sid!4v1689668017762!5m2!1sen!2sid" width="750" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+        </div>
+    </div>
+    <div class="buku-tamu">
+        <div class="form-container">
+            <div class="kartu" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="header">
+                    <h1>berikan d'oa terbaik</h1>
+                    <img src="img/icon 2.png" alt="icon 2">
+                </div>
+                <form class="form">
+                    <input type="text" id="fname" name="fname" required placeholder="Masukkan nama" class="one">
+                    <textarea name="ucapan" id="" cols="30" rows="10" class="two" placeholder="Berikan do'a terbaik"></textarea>
+                    <input type="submit" value="Kirim ucapan">
+                    <div class="tampilkan-komentar" id="dataContainer">
+                        <h3>User</h3>
+                        <p>Selamat ya!! sakinah, mawadah & warahmah</p>
+                        <!-- <?php
+                        include_once 'get_data.php';
+                        ?> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="koleksi-foto">
+        <div class="header">
+            <h1>galeri kami</h1>
+            <img src="img/icon 2.png" alt="icon 2">
+        </div>
+        <div class="galeri" data-aos="zoom-in" data-aos-duration="2500">
+            <div class="list-foto">
+                <div id="galeri" class="container-fluid">  
+                    <a href="img/358577254_18239081986206729_1290010587264343977_n.jpg">
+                        <img alt="" src="img/358577254_18239081986206729_1290010587264343977_n.jpg">
+                    </a>
+                    <a href="img/359506780_18239081959206729_7462022212390940066_n.jpg">
+                        <img alt="" src="img/359506780_18239081959206729_7462022212390940066_n.jpg">
+                    </a>
+                    <a href="img/358610440_18239082016206729_7531400844113538036_n.jpg">
+                        <img alt="" src="img/358610440_18239082016206729_7531400844113538036_n.jpg">
+                    </a>
+                    <a href="img/358650867_18239081968206729_8409105699620810138_n.jpg">
+                        <img alt="" src="img/358650867_18239081968206729_8409105699620810138_n.jpg">
+                    </a>
+                    <a href="img/358691825_18239082025206729_3358221701695625649_n.jpg">
+                        <img alt="" src="img/358691825_18239082025206729_3358221701695625649_n.jpg">
+                    </a>
+                    <a href="img/359003211_18239082007206729_8848882829683124088_n.jpg">
+                        <img alt="" src="img/359003211_18239082007206729_8848882829683124088_n.jpg">
+                    </a>
+                    <a href="img/359471848_18239081998206729_4820685368099879478_n.jpg">
+                        <img alt="" src="img/359471848_18239081998206729_4820685368099879478_n.jpg">
+                    </a>
+                    <a href="img/359476323_18239082043206729_3869169841099146740_n.jpg">
+                        <img alt="" src="img/359476323_18239082043206729_3869169841099146740_n.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <h1>konfirmasi kehadiran</h1>
+        <img src="img/icon 2.png" alt="icon 2">
+    </div>
+    <div class="konfirmasi">
+        <div class="rsvp-wrapper">
+            <div class="form-rsvp">
+                <p>kami mengerti, ada banyak waktu dan acara yang sudah sudah menjadi janji sebelumnya. merupakan suatu kehormatan dan kebahagian bagi kami, apabila ibu/bapak/saudara/i bisa berkenan untuk mengisi form RSVP untuk konfirmasi kehadiran pada acara pernikahan kami</p>
+                <br><br><a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Nama%20Acara&dates=20230720T120000/20230720T130000&details=Deskripsi%20Acara&location=Lokasi%20Acara" class="button">rsvp</a>
+            </div>
+        </div>
+    </div>
+      
+    <div class="ayat">
+        <div class="ayat-wrapper">
+            <div class="header">
+                <h3 data-aos="zoom-in" data-aos-duration="2500">terima kasih</h3>
+                <h1 data-aos="zoom-in" data-aos-duration="2500">denata & anggelia</h1>
+                <img src="img/icon 1.png" alt="icon 1" data-aos="zoom-in" data-aos-duration="2500" class="penutup">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h3><b>CREATED BY</b></h3>
+        <p>&copy; 2023 touch_in.com, all right reserved</p data-aos="zoom-in" data-aos-duration="2500">
+        <a href="https://www.instagram.com/m.abdul.kd/?hl=en"><i class="fa-brands fa-instagram fa-lg" style="color: #000000;"></i></a> 
+        <a href="https://api.whatsapp.com/send?phone=6285220623851"><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i></a>
+        <a href="https://github.com/MabdulKD"><i class="fa-brands fa-github fa-lg" style="color: #000000;"></i></i></a>
+    </div>
+
+
+    <!-- particle -->
+    <script src="js/particle.js"></script>
+
+    <!-- popup script -->
+    <script src="js/popup.js"></script>
+
+    <!-- back to top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+    </button>
+    <!-- scrool to top -->
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <!-- script audio -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var popup = document.getElementById('popup');
+        var closeButton = document.getElementById('close-popup');
+        var playPauseButton = document.getElementById('play-pause-btn');
+        var popupMusic = document.getElementById('popup-music');
+        var musicControls = document.getElementById('music-controls');
+
+        // Menampilkan popup saat halaman dimuat
+        popup.style.display = 'flex';
+
+        // Menutup popup dan menampilkan tombol Play saat tombol ditutup diklik
+        closeButton.addEventListener('click', function() {
+        popup.classList.add('popup-closed');
+        musicControls.style.display = 'block';
+        playPauseButton.querySelector('.fa-volume-up').style.display = 'inline';
+        playPauseButton.querySelector('.fa-volume-mute').style.display = 'none';
+        popupMusic.play();
+        });
+
+        // Memainkan atau memberhentikan musik saat tombol Play/Pause diklik
+        playPauseButton.addEventListener('click', function() {
+        if (popupMusic.paused) {
+            popupMusic.play();
+            playPauseButton.querySelector('.fa-volume-mute').style.display = 'none';
+            playPauseButton.querySelector('.fa-volume-up').style.display = 'inline';
+        } else {
+            popupMusic.pause();
+            playPauseButton.querySelector('.fa-volume-mute').style.display = 'inline';
+            playPauseButton.querySelector('.fa-volume-up').style.display = 'none';
+        }
+        });
+
+        // Menambahkan kelas 'loaded' ke elemen body setelah halaman selesai dimuat
+        window.addEventListener('load', function() {
+        document.body.classList.add('loaded');
+  });
+});
+
+    </script>
+
+
+
+    <!-- lightgallery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/autoplay/lg-autoplay.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/plugins/zoom/lg-zoom.min.js" integrity="sha512-BfC/MaayF9sOZyn1bs1R1P8dEugU7v0j5Qu2FeWVfF/rhKUKZBD9kgNqRNinefIp9zAE7g2KhlwwhMpl5V1jMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- lightgallery panggil -->
+    <script>
+        lightGallery(document.getElementById('galeri'), {
+            plugins: [lgAutoplay, lgFullscreen, lgZoom],
+        });
+    </script>
+
+    <!-- aos animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+         AOS.init();
+    </script>
+
+    <!-- countdown -->
+    <script>
+        var countDownDate = new Date("September 19, 2023 00:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+    
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+    
+        }, 1000);
+    </script>
+
+
+</body>
+</html>

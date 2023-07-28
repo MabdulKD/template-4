@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    form {
+      display: none; /* Mulai dengan menyembunyikan formulir */
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      width: 300px;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <!-- Tombol RSVP -->
+  <button id="rsvpButton">RSVP</button>
+
+  <!-- Formulir RSVP -->
+  <form id="rsvpForm">
+    <div class="group2">
+      <input type="text" id="nama" name="nama" required placeholder="Masukkan nama">
+      
+      <select id="hadir" name="hadir" required>
+        <option value="">Apakah akan hadir?</option>
+        <option value="Ya">Ya</option>
+        <option value="Tidak">Tidak</option>
+      </select>
+  
+      <select id="jumlah_tamu" name="jumlah_tamu" required>
+        <option value="">Jumlah tamu</option>
+        <option value="1">1 Tamu</option>
+        <option value="2">2 Tamu</option>
+        <option value="3">3 Tamu</option>
+        <option value="4">4 Tamu</option>
+      </select>
+  
+      <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="Masukkan pesan"></textarea>
+    </div>
+    <div class="group3">
+      <input type="submit" value="Kirim">
+    </div>
+  </form>
+
+  <script>
+    const rsvpButton = document.getElementById('rsvpButton');
+    const rsvpForm = document.getElementById('rsvpForm');
+
+    rsvpButton.addEventListener('click', function () {
+      // Tampilkan formulir saat tombol RSVP di klik
+      rsvpForm.style.display = 'block';
+    });
+
+    rsvpForm.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      // Ambil nilai-nilai dari formulir
+      const nama = document.getElementById('nama').value;
+      const hadir = document.getElementById('hadir').value;
+      const jumlah_tamu = document.getElementById('jumlah_tamu').value;
+      const pesan = document.getElementById('pesan').value;
+
+      // Bentuk URL untuk WhatsApp
+      const whatsappNumber = 'NOMOR_WHATSAPP'; // Ganti dengan nomor WhatsApp penerima
+      const message = `Nama: ${nama}\nHadir: ${hadir}\nJumlah Tamu: ${jumlah_tamu}\nPesan: ${pesan}`;
+      const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+
+      // Buka WhatsApp menggunakan link
+      window.open(whatsappUrl);
+
+      // Sembunyikan formulir setelah mengirimkan data
+      rsvpForm.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
