@@ -617,6 +617,14 @@ align-items: center;
     .rsvp-container {
         width: 100%;
     }
+    .rsvp-wrapper {
+        width: 325px;
+        height: 340px;
+    }
+    .form-rsvp {
+        width: 320px;
+        height: 330px;
+    }
     .surah h3 {
         font-size: small;
     }
