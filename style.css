@@ -686,7 +686,7 @@ input[type="submit" i]:hover {
         font-size: xx-large;
     }
     input[type="submit" i] {
-        width: 60%;
+        width: 40%;
     }
     .tampilkan-komentar p {
         width: auto;
