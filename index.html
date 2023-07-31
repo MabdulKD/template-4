@@ -182,21 +182,45 @@
                     <h1>berikan d'oa terbaik</h1>
                     <img src="img/icon 2.png" alt="icon 2">
                 </div>
-                <form class="form">
+                <form class="form" id="bukuTamuForm">
                     <input type="text" id="fname" name="fname" required placeholder="Masukkan nama" class="one">
-                    <textarea name="ucapan" id="" cols="30" rows="10" class="two" placeholder="Berikan do'a terbaik"></textarea>
+                    <textarea name="ucapan" id="ucapan" cols="30" rows="10" class="two" placeholder="Berikan do'a terbaik"></textarea>
                     <input type="submit" value="Kirim ucapan">
                     <div class="tampilkan-komentar" id="dataContainer">
-                        <h3>User</h3>
-                        <p>Selamat ya!! sakinah, mawadah & warahmah</p>
-                        <!-- <?php
-                        include_once 'get_data.php';
-                        ?> -->
+                        
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+    <script>
+        // Fungsi untuk menampilkan komentar
+        function tampilkanKomentar(nama, ucapan) {
+          const komentarContainer = document.getElementById('dataContainer');
+          const komentarElement = document.createElement('div');
+          komentarElement.innerHTML = `<h3>${nama}</h3><p>${ucapan}</p>`;
+          komentarContainer.appendChild(komentarElement);
+        }
+    
+        // Tangkap form saat dikirimkan
+        const form = document.getElementById('bukuTamuForm');
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+    
+          // Ambil nilai dari input nama dan textarea ucapan
+          const nama = document.getElementById('fname').value;
+          const ucapan = document.getElementById('ucapan').value;
+    
+          // Panggil fungsi untuk menampilkan komentar
+          tampilkanKomentar(nama, ucapan);
+    
+          // Kosongkan nilai input nama dan textarea ucapan
+          document.getElementById('fname').value = '';
+          document.getElementById('ucapan').value = '';
+        });
+      </script>
+
     <div class="koleksi-foto">
         <div class="header">
             <h1>galeri kami</h1>

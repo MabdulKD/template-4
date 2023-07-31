@@ -388,7 +388,7 @@ input[type="submit" i]:hover {
     background-color: transparent;
     padding: 8px;
     margin-top: 20px;    font-family: 'Poppins', sans-serif;
-
+    overflow: auto;
 }
 .koleksi-foto {
     margin-top: 100px;
@@ -710,11 +710,11 @@ input[type="submit" i]:hover {
     }
     .rsvp-wrapper {
         width: 325px;
-        height: 340px;
+        height: 380px;
     }
     .form-rsvp {
         width: 320px;
-        height: 330px;
+        height: 375px;
     }
     .popup-content {
         width: 85%;
