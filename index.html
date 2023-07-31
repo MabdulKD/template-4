@@ -77,7 +77,7 @@
             <p>putri pertama dari pasangan</p>
             <p>bapak adhelia &</p>
             <p>ibu adhelia mufhira</p>
-            <a href="" class="button"><i class="fa-brands fa-instagram fa-lg" style="color: #fff;"></i> instagram</a>
+            <a href="https://www.instagram.com/m.abdul.kd/?hl=en" class="button"><i class="fa-brands fa-instagram fa-lg" style="color: #fff;"></i> instagram</a>
         </div>
         <div class="profile">
             <h1>irfan padhilah</h1>
@@ -91,7 +91,7 @@
             <p>putra pertama dari pasangan</p>
             <p>bapak irfan &</p>
             <p>ibu irfan fadhilah</p>
-            <a href="" class="button"><i class="fa-brands fa-instagram fa-lg" style="color: #fff;"></i> instagram</a>
+            <a href="https://www.instagram.com/m.abdul.kd/?hl=en" class="button"><i class="fa-brands fa-instagram fa-lg" style="color: #fff;"></i> instagram</a>
         </div>
     </div>
     <div class="countdown">
@@ -193,34 +193,6 @@
             </div>
         </div>
     </div>
-
-    <script>
-        // Fungsi untuk menampilkan komentar
-        function tampilkanKomentar(nama, ucapan) {
-          const komentarContainer = document.getElementById('dataContainer');
-          const komentarElement = document.createElement('div');
-          komentarElement.innerHTML = `<h3>${nama}</h3><p>${ucapan}</p>`;
-          komentarContainer.appendChild(komentarElement);
-        }
-    
-        // Tangkap form saat dikirimkan
-        const form = document.getElementById('bukuTamuForm');
-        form.addEventListener('submit', function (event) {
-          event.preventDefault();
-    
-          // Ambil nilai dari input nama dan textarea ucapan
-          const nama = document.getElementById('fname').value;
-          const ucapan = document.getElementById('ucapan').value;
-    
-          // Panggil fungsi untuk menampilkan komentar
-          tampilkanKomentar(nama, ucapan);
-    
-          // Kosongkan nilai input nama dan textarea ucapan
-          document.getElementById('fname').value = '';
-          document.getElementById('ucapan').value = '';
-        });
-      </script>
-
     <div class="koleksi-foto">
         <div class="header">
             <h1>galeri kami</h1>
@@ -311,55 +283,6 @@
             </div>
         </div>
     </div> 
-
-    <script>
-        const rsvpButton = document.getElementById('rsvpButton');
-        const formRsvp = document.getElementById('formRsvp');
-        const popupFormRsvp = document.getElementById('popupFormRsvp');
-        const cancelButton = document.getElementById('cancelButton');
-    
-        rsvpButton.addEventListener('click', function (event) {
-          event.preventDefault();
-    
-          // Tampilkan popup saat tombol RSVP di klik
-          popupFormRsvp.style.display = 'block';
-        });
-    
-        cancelButton.addEventListener('click', function (event) {
-          event.preventDefault();
-    
-          // Sembunyikan popup saat tombol Batal di klik
-          popupFormRsvp.style.display = 'none';
-        });
-    
-        const rsvpForm = document.getElementById('rsvpForm');
-    
-        rsvpForm.addEventListener('submit', function (event) {
-          event.preventDefault();
-    
-          // Ambil nilai-nilai dari formulir
-          const nama = document.getElementById('nama').value;
-          const kehadiran = document.getElementById('kehadiran').value;
-          const jumlah_tamu = document.getElementById('jumlah_tamu').value;
-          const pesan = document.getElementById('pesan').value;
-    
-          // Bentuk URL untuk WhatsApp (Anda juga dapat menggantinya dengan tautan atau metode lain sesuai kebutuhan)
-          const whatsappNumber = '6285220623851'; // Ganti dengan nomor WhatsApp penerima
-          const message = `Nama: ${nama}\nKehadiran: ${kehadiran}\nJumlah Tamu: ${jumlah_tamu}\nPesan: ${pesan}`;
-          const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
-    
-          // Buka WhatsApp menggunakan link
-          window.open(whatsappUrl);
-    
-          // Sembunyikan popup setelah mengirimkan data
-          popupFormRsvp.style.display = 'none';
-        });
-      </script>
-
-
-
-
-
     <div class="ayat">
         <div class="ayat-wrapper">
             <div class="header">
@@ -408,6 +331,79 @@
           document.body.scrollTop = 0;
           document.documentElement.scrollTop = 0;
         }
+    </script>
+
+    <!-- script buku-tamu -->
+    <script>
+        // Fungsi untuk menampilkan komentar
+        function tampilkanKomentar(nama, ucapan) {
+          const komentarContainer = document.getElementById('dataContainer');
+          const komentarElement = document.createElement('div');
+          komentarElement.innerHTML = `<h3>${nama}</h3><p>${ucapan}</p>`;
+          komentarContainer.appendChild(komentarElement);
+        }
+    
+        // Tangkap form saat dikirimkan
+        const form = document.getElementById('bukuTamuForm');
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+    
+          // Ambil nilai dari input nama dan textarea ucapan
+          const nama = document.getElementById('fname').value;
+          const ucapan = document.getElementById('ucapan').value;
+    
+          // Panggil fungsi untuk menampilkan komentar
+          tampilkanKomentar(nama, ucapan);
+    
+          // Kosongkan nilai input nama dan textarea ucapan
+          document.getElementById('fname').value = '';
+          document.getElementById('ucapan').value = '';
+        });
+    </script>
+
+    <!-- script rsvp -->
+    <script>
+        const rsvpButton = document.getElementById('rsvpButton');
+        const formRsvp = document.getElementById('formRsvp');
+        const popupFormRsvp = document.getElementById('popupFormRsvp');
+        const cancelButton = document.getElementById('cancelButton');
+    
+        rsvpButton.addEventListener('click', function (event) {
+          event.preventDefault();
+    
+          // Tampilkan popup saat tombol RSVP di klik
+          popupFormRsvp.style.display = 'block';
+        });
+    
+        cancelButton.addEventListener('click', function (event) {
+          event.preventDefault();
+    
+          // Sembunyikan popup saat tombol Batal di klik
+          popupFormRsvp.style.display = 'none';
+        });
+    
+        const rsvpForm = document.getElementById('rsvpForm');
+    
+        rsvpForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+    
+          // Ambil nilai-nilai dari formulir
+          const nama = document.getElementById('nama').value;
+          const kehadiran = document.getElementById('kehadiran').value;
+          const jumlah_tamu = document.getElementById('jumlah_tamu').value;
+          const pesan = document.getElementById('pesan').value;
+    
+          // Bentuk URL untuk WhatsApp (Anda juga dapat menggantinya dengan tautan atau metode lain sesuai kebutuhan)
+          const whatsappNumber = '6285220623851'; // Ganti dengan nomor WhatsApp penerima
+          const message = `Nama: ${nama}\nKehadiran: ${kehadiran}\nJumlah Tamu: ${jumlah_tamu}\nPesan: ${pesan}`;
+          const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+          // Buka WhatsApp menggunakan link
+          window.open(whatsappUrl);
+    
+          // Sembunyikan popup setelah mengirimkan data
+          popupFormRsvp.style.display = 'none';
+        });
     </script>
 
     <!-- script audio -->
