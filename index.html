@@ -28,19 +28,17 @@
 
 </head>
 <body>
-
     <!-- audio website -->
     <audio id="popup-music" src="Nothings Gonna Change My Love For You  George Benson Wedding Version Lyric Video  Mild Nawin (mp3cut.net).mp3" loop></audio>
-   
     <!-- popup tamu -->
     <div id="popup">
         <div class="atas">
             <p>undangan pernikahan</p>
-            <h1 class="pengantin">denata & anggelia</h1>
+            <h1 class="pengantin">adhelia & irfan</h1>
         </div>
         <div class="bawah">
             <p>kepada Yth :</p>
-            <h2>Selamat datang!</h2>
+            <h2>Tamu Undangan!</h2>
             <button id="close-popup">Buka Undangan</button>
         </div>
     </div>
@@ -52,9 +50,9 @@
         </button>
     </div>
     <div class="hero-section">
-        <h2 data-aos="fade-up" data-aos-duration="2500" data-aos-delay="3000">19 september, 2023 </h2>
         <h1 data-aos="fade-down" data-aos-duration="2500" data-aos-delay="3000">adhelia & irfan</h1>
-        <img src="img/icon-1.png" alt="icon-1" data-aos="zoom-in">
+        <img src="img/icon-1.png" alt="icon-1" data-aos="zoom-in" data-aos-duration="2500" data-aos-delay="3000">
+        <h2>19 september, 2023 </h2>
         <p>catat dan simpan acara pernikahan kami</p>
         <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Nama%20Acara&dates=20230720T120000/20230720T130000&details=Deskripsi%20Acara&location=Lokasi%20Acara" class="button">save the date</a>
         <canvas id="particle-canvas"></canvas>
@@ -97,9 +95,9 @@
         </div>
     </div>
     <div class="countdown">
-        <div class="waktu">
+        <div class="waktu" data-aos="zoom-in" data-aos-duration="2500">
             <div class="kotak1">
-                <section class='FlexContainer' data-aos="zoom-in" data-aos-duration="2500">
+                <section class='FlexContainer'>
                     <div>
                         <p id="days">00</p>
                         <p class="ket">day</p>
@@ -132,8 +130,8 @@
     </div>
     <div class="lokasi">
         <div class="acara">
-           <div class="outline">
-                 <div class="akad-resepsi" data-aos="zoom-in" data-aos-duration="2500">
+           <div class="outline" data-aos="zoom-in" data-aos-duration="2500">
+                 <div class="akad-resepsi">
                 <div class="judul">
                     <img src="img/akad-icon.png" alt="icon akad" width="80px">
                     <h2>akad nikah</h2>
@@ -151,8 +149,8 @@
                 </div>
             </div> 
            </div> 
-            <div class="outline">
-                <div class="akad-resepsi" data-aos="zoom-in" data-aos-duration="2500">
+            <div class="outline" data-aos="zoom-in" data-aos-duration="2500">
+                <div class="akad-resepsi" >
                     <div class="judul">
                         <img src="img/resepsi-icon.png" alt="icon akad" width="80px">
                         <h2>resepsi</h2>
@@ -231,40 +229,132 @@
                     <a href="img/359476323_18239082043206729_3869169841099146740_n.jpg">
                         <img alt="" src="img/359476323_18239082043206729_3869169841099146740_n.jpg">
                     </a>
+                    <a href="img/359506780_18239081959206729_7462022212390940066_n.jpg">
+                        <img alt="" src="img/359506780_18239081959206729_7462022212390940066_n.jpg">
+                    </a>
+                    <a href="img/358650867_18239081968206729_8409105699620810138_n.jpg">
+                        <img alt="" src="img/358650867_18239081968206729_8409105699620810138_n.jpg">
+                    </a>
+                    <a href="img/358691825_18239082025206729_3358221701695625649_n.jpg">
+                        <img alt="" src="img/358691825_18239082025206729_3358221701695625649_n.jpg">
+                    </a>
+                    <a href="img/359003211_18239082007206729_8848882829683124088_n.jpg">
+                        <img alt="" src="img/359003211_18239082007206729_8848882829683124088_n.jpg">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="header">
+    <div class="header"  data-aos="zoom-in" data-aos-duration="2500">
         <h1>konfirmasi kehadiran</h1>
         <img src="img/icon 2.png" alt="icon 2">
     </div>
-    <div class="konfirmasi">
+    <div class="konfirmasi"  data-aos="zoom-in" data-aos-duration="2500">
         <div class="rsvp-wrapper">
-            <div class="form-rsvp">
+            <div class="form-rsvp" id="formRsvp">
                 <p>kami mengerti, ada banyak waktu dan acara yang sudah sudah menjadi janji sebelumnya. merupakan suatu kehormatan dan kebahagian bagi kami, apabila ibu/bapak/saudara/i bisa berkenan untuk mengisi form RSVP untuk konfirmasi kehadiran pada acara pernikahan kami</p>
-                <br><br><a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Nama%20Acara&dates=20230720T120000/20230720T130000&details=Deskripsi%20Acara&location=Lokasi%20Acara" class="button">rsvp</a>
+                <br><br><a href="#" class="button" id="rsvpButton">RSVP</a>
             </div>
         </div>
-    </div>
-      
+         <!-- Popup Form RSVP -->
+        <div class="popUp" id="popupFormRsvp">
+            <div class="popup-content">
+            <form id="rsvpForm">
+                <h2>Form RSVP</h2>
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required placeholder="Masukkan nama">
+                
+                <label for="kehadiran">Apakah akan hadir?</label>
+                <select id="kehadiran" name="kehadiran" required>
+                <option value="">Pilih kehadiran</option>
+                <option value="Ya">Ya</option>
+                <option value="Tidak">Tidak</option>
+                </select>
+            
+                <label for="jumlah_tamu">Jumlah tamu:</label>
+                <select id="jumlah_tamu" name="jumlah_tamu" required>
+                <option value="">Pilih jumlah tamu</option>
+                <option value="1">1 Tamu</option>
+                <option value="2">2 Tamu</option>
+                <option value="3">3 Tamu</option>
+                <option value="4">4 Tamu</option>
+                </select>
+            
+                <label for="pesan">Pesan tambahan:</label>
+                <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="Masukkan pesan"></textarea>
+                
+                <br><br>
+                <input type="submit" value="Kirim">
+                <button type="button" id="cancelButton">Batal</button>
+            </form>
+            </div>
+        </div>
+    </div> 
+
+    <script>
+        const rsvpButton = document.getElementById('rsvpButton');
+        const formRsvp = document.getElementById('formRsvp');
+        const popupFormRsvp = document.getElementById('popupFormRsvp');
+        const cancelButton = document.getElementById('cancelButton');
+    
+        rsvpButton.addEventListener('click', function (event) {
+          event.preventDefault();
+    
+          // Tampilkan popup saat tombol RSVP di klik
+          popupFormRsvp.style.display = 'block';
+        });
+    
+        cancelButton.addEventListener('click', function (event) {
+          event.preventDefault();
+    
+          // Sembunyikan popup saat tombol Batal di klik
+          popupFormRsvp.style.display = 'none';
+        });
+    
+        const rsvpForm = document.getElementById('rsvpForm');
+    
+        rsvpForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+    
+          // Ambil nilai-nilai dari formulir
+          const nama = document.getElementById('nama').value;
+          const kehadiran = document.getElementById('kehadiran').value;
+          const jumlah_tamu = document.getElementById('jumlah_tamu').value;
+          const pesan = document.getElementById('pesan').value;
+    
+          // Bentuk URL untuk WhatsApp (Anda juga dapat menggantinya dengan tautan atau metode lain sesuai kebutuhan)
+          const whatsappNumber = '6285220623851'; // Ganti dengan nomor WhatsApp penerima
+          const message = `Nama: ${nama}\nKehadiran: ${kehadiran}\nJumlah Tamu: ${jumlah_tamu}\nPesan: ${pesan}`;
+          const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    
+          // Buka WhatsApp menggunakan link
+          window.open(whatsappUrl);
+    
+          // Sembunyikan popup setelah mengirimkan data
+          popupFormRsvp.style.display = 'none';
+        });
+      </script>
+
+
+
+
+
     <div class="ayat">
         <div class="ayat-wrapper">
             <div class="header">
                 <h3 data-aos="zoom-in" data-aos-duration="2500">terima kasih</h3>
                 <h1 data-aos="zoom-in" data-aos-duration="2500">denata & anggelia</h1>
-                <img src="img/icon 1.png" alt="icon 1" data-aos="zoom-in" data-aos-duration="2500" class="penutup">
+                <img src="img/icon-1.png" alt="icon-1" data-aos="zoom-in" data-aos-duration="2500" class="penutup">
             </div>
         </div>
     </div>
     <div class="footer">
         <h3><b>CREATED BY</b></h3>
         <p>&copy; 2023 touch_in.com, all right reserved</p data-aos="zoom-in" data-aos-duration="2500">
-        <a href="https://www.instagram.com/m.abdul.kd/?hl=en"><i class="fa-brands fa-instagram fa-lg" style="color: #000000;"></i></a> 
-        <a href="https://api.whatsapp.com/send?phone=6285220623851"><i class="fa-brands fa-whatsapp fa-lg" style="color: #000000;"></i></a>
-        <a href="https://github.com/MabdulKD"><i class="fa-brands fa-github fa-lg" style="color: #000000;"></i></i></a>
+        <a href="https://www.instagram.com/m.abdul.kd/?hl=en"><i class="fa-brands fa-instagram fa-xl" style="color: #F4EEE0;"></i></a> 
+        <a href="https://api.whatsapp.com/send?phone=6285220623851"><i class="fa-brands fa-whatsapp fa-xl" style="color: #F4EEE0;"></i></a>
+        <a href="https://github.com/MabdulKD"><i class="fa-brands fa-github fa-xl" style="color: #F4EEE0;"></i></i></a>
     </div>
-
 
     <!-- particle -->
     <script src="js/particle.js"></script>
@@ -274,7 +364,7 @@
 
     <!-- back to top -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">
-        <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f4eeee}</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM385 231c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-71-71V376c0 13.3-10.7 24-24 24s-24-10.7-24-24V193.9l-71 71c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9L239 119c9.4-9.4 24.6-9.4 33.9 0L385 231z"/></svg>
     </button>
     <!-- scrool to top -->
     <script>
@@ -340,8 +430,6 @@
 });
 
     </script>
-
-
 
     <!-- lightgallery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>

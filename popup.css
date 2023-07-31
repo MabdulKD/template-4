@@ -1,5 +1,5 @@
 #popup {
-    background: linear-gradient(to bottom, transparent, #4F4557), url("img/359506780_18239081959206729_7462022212390940066_n.jpg");
+    background: linear-gradient(to bottom, transparent, #4F4557), url("img/bg-hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -70,5 +70,7 @@
     #popup .atas h1 {
       font-size: 45px;
     }
-
+    #popup .bawah {
+      margin-top: 300px;
+    }
   }

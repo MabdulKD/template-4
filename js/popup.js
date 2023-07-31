@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Memperbarui teks h1 dengan nilai "nama" dari URL
     var h1 = popup.querySelector('h2');
-    h1.textContent = nama ? nama : "Selamat datang!";
+    h1.textContent = nama ? nama : "Tamu Undangan!";
 
     // Menampilkan popup saat halaman dimuat
     popup.style.display = 'flex';
