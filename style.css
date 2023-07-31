@@ -428,14 +428,14 @@ input[type="submit" i]:hover {
 }
 .rsvp-wrapper {
     width: 700px;
-    height: 218px;
+    height: 240px;
     border: 1px solid #F4EEE0;
     padding: 5px;
 }
 .form-rsvp {
     display: block; /* Tampilkan form secara default */
     width: 695px;
-    height: 213px;
+    height: 235px;
     border: 1px solid #F4EEE0;
     padding: 20px;
     text-align: justify;
@@ -451,16 +451,88 @@ input[type="submit" i]:hover {
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 9999;
   }
-
   .popup-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 20px;
-    border: 1px solid #ccc;
-    background-color: #fff;
+    padding: 30px;
+    border: 1px solid #F4EEE0;
+    background-color: #6D5D6E;
     z-index: 9999;
+  }
+  .popup-content form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .popup-content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  .popup-content label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .popup-content input,
+  .popup-content select,
+  .popup-content textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #F4EEE0;
+    box-sizing: border-box;
+  }
+
+  .popup-content textarea {
+    resize: vertical;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: #F4EEE0; /* Ganti dengan warna yang diinginkan */
+  }
+  select {
+    color: #F4EEE0; /* Warna teks untuk opsi yang dipilih */
+    background-color: #6D5D6E; /* Warna latar belakang untuk dropdown select */
+  }
+
+  option {
+    background-color: #6D5D6E; /* Warna latar belakang untuk opsi */
+  }
+  .popup-content input[type="submit"],
+  .popup-content button {
+    background-color: #393646;
+    color: #F4EEE0;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: none;
+  }
+
+  .popup-content input[type="submit"]:hover,
+  .popup-content button:hover {
+    background-color: #4F4557;
+  }
+
+  .popup-content button[type="button"] {
+    background-color: #4F4557;
+    margin-right: 10px;
+    color: #F4EEE0;
+  }
+
+  .popup-content .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .ayat h3 {
+    z-index: -1;
+    text-transform: uppercase;
   }
 .footer {
     width: 100%;
@@ -493,7 +565,7 @@ input[type="submit" i]:hover {
     cursor: pointer;
     transition: all 0.4s ease-out;
     z-index: 99;
-    opacity: .9;
+    opacity: .7;
     }
 .fa-solid, .fas {
     color: #F4EEE0;
@@ -522,7 +594,6 @@ input[type="submit" i]:hover {
     #myBtn:hover {
     opacity: .8; /* Add a dark-grey background on hover */
     }
-
 
 
 /* media responsive tablet*/
@@ -565,8 +636,6 @@ input[type="submit" i]:hover {
     .kartu {
         width: 85%;
     }
-  
-   
 }
 
 /* media responsive smartphone*/
@@ -575,7 +644,7 @@ input[type="submit" i]:hover {
         margin-top: -80px;
     }
     .hero-section h2 {
-        margin-top: 350px;
+        margin-top: 250px;
     }
     .hero-section img {
         width: 30%;
@@ -646,6 +715,12 @@ input[type="submit" i]:hover {
     .form-rsvp {
         width: 320px;
         height: 330px;
+    }
+    .popup-content {
+        width: 85%;
+    }
+    .popup-content button[type="button"] {
+        margin-left: 18px;
     }
     .surah h3 {
         font-size: small;

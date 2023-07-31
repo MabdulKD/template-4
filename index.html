@@ -253,7 +253,8 @@
         <div class="rsvp-wrapper">
             <div class="form-rsvp" id="formRsvp">
                 <p>kami mengerti, ada banyak waktu dan acara yang sudah sudah menjadi janji sebelumnya. merupakan suatu kehormatan dan kebahagian bagi kami, apabila ibu/bapak/saudara/i bisa berkenan untuk mengisi form RSVP untuk konfirmasi kehadiran pada acara pernikahan kami</p>
-                <br><br><a href="#" class="button" id="rsvpButton">RSVP</a>
+                <br><p>note : *klik tombol RSVP untuk konfirmasi kehadiran!</p>
+                <br><a href="#" class="button" id="rsvpButton">RSVP</a>
             </div>
         </div>
          <!-- Popup Form RSVP -->
@@ -261,17 +262,14 @@
             <div class="popup-content">
             <form id="rsvpForm">
                 <h2>Form RSVP</h2>
-                <label for="nama">Nama:</label>
                 <input type="text" id="nama" name="nama" required placeholder="Masukkan nama">
                 
-                <label for="kehadiran">Apakah akan hadir?</label>
                 <select id="kehadiran" name="kehadiran" required>
                 <option value="">Pilih kehadiran</option>
                 <option value="Ya">Ya</option>
                 <option value="Tidak">Tidak</option>
                 </select>
             
-                <label for="jumlah_tamu">Jumlah tamu:</label>
                 <select id="jumlah_tamu" name="jumlah_tamu" required>
                 <option value="">Pilih jumlah tamu</option>
                 <option value="1">1 Tamu</option>
@@ -280,7 +278,6 @@
                 <option value="4">4 Tamu</option>
                 </select>
             
-                <label for="pesan">Pesan tambahan:</label>
                 <textarea id="pesan" name="pesan" rows="4" cols="50" placeholder="Masukkan pesan"></textarea>
                 
                 <br><br>
